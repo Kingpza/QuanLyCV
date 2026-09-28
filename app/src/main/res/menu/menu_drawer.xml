@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tasks"
+            android:icon="@drawable/ic_check_circle"
+            android:title="@string/task_list_title" />
+
+        <item
+            android:id="@+id/nav_kanban"
+            android:icon="@drawable/ic_kanban"
+            android:title="@string/menu_kanban" />
+
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_calendar"
+            android:title="@string/menu_calendar" />
+
+        <item
+            android:id="@+id/nav_stats"
+            android:icon="@drawable/ic_stats"
+            android:title="@string/menu_stats" />
+
+        <item
+            android:id="@+id/nav_trash"
+            android:icon="@drawable/ic_delete"
+            android:title="@string/menu_trash" />
+    </group>
+
+    <item android:title="@string/menu_group_account_settings">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_person"
+                android:title="@string/menu_profile" />
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/menu_settings" />
+
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_clear"
+                android:title="@string/menu_exit" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_calendar"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/menu_calendar"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_kanban"
+        android:icon="@drawable/ic_kanban"
+        android:title="@string/menu_kanban"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_stats"
+        android:icon="@drawable/ic_stats"
+        android:title="@string/menu_stats"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_trash"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/menu_trash"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/menu_profile"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/menu_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_exit"
+        android:icon="@drawable/ic_clear"
+        android:title="@string/menu_exit"
+        app:showAsAction="never" />
+
+</menu>

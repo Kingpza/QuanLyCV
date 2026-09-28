@@ -1,0 +1,197 @@
+<resources>
+    <string name="app_name">Quản Lý Công Việc</string>
+
+    <!-- Main Activity -->
+    <string name="task_list_title">Danh Sách Công Việc</string>
+
+    <string name="empty_task_list">Chưa có công việc nào. Nhấn + để thêm mới!</string>
+    <string name="add_task">Thêm công việc</string>
+    <string name="desc_edit_user">Đổi tên người dùng</string>
+
+    <!-- Filter Options -->
+    <string name="filter_all">Tất cả</string>
+    <string name="filter_pending">Chưa xong</string>
+    <string name="filter_done">Đã xong</string>
+
+
+    <!-- Menu -->
+    <string name="menu_stats">Thống Kê &amp; Báo Cáo</string>
+    <string name="menu_calendar">Lịch Công Việc</string>
+    <string name="menu_kanban">Bảng Tiến Độ</string>
+    <string name="menu_trash">Thùng Rác</string>
+    <string name="menu_group_account_settings">Tài khoản &amp; Cài đặt</string>
+    <string name="menu_profile">Thông Tin Cá Nhân</string>
+    <string name="menu_settings">Cài Đặt Ứng Dụng</string>
+    <string name="menu_exit">Thoát Ứng Dụng</string>
+    <string name="menu_edit">Chỉnh sửa</string>
+    <string name="menu_delete">Xóa</string>
+
+    <string name="menu_share">Chia sẻ công việc</string>
+
+    <!-- Kanban Column Headers -->
+
+
+    <!-- Task Detail Activity -->
+    <string name="title_add_task">Thêm Công Việc Mới</string>
+    <string name="title_edit_task">Chỉnh Sửa Công Việc</string>
+    <string name="task_title_label">Tên công việc (*)</string>
+    <string name="task_title_hint">Nhập tên công việc...</string>
+    <string name="task_desc_label">Mô tả công việc</string>
+    <string name="task_desc_hint">Nhập chi tiết mô tả (nếu có)...</string>
+    <string name="task_time_label">Thời gian thực hiện (*)</string>
+
+    <string name="task_category_label">Danh mục / Dự án</string>
+    <string name="task_category_hint">Nhập danh mục / dự án (VD: Học tập, Cá nhân...)</string>
+    <string name="task_priority_label">Mức độ ưu tiên</string>
+    <string name="task_status_label">Trạng thái công việc</string>
+    <string name="task_reminder_label">Nhắc nhở trước</string>
+    <string name="task_repeat_label">Công việc lặp lại</string>
+    <string name="task_subtasks_label">Công việc con</string>
+    <string name="task_subtask_hint">Thêm bước nhỏ...</string>
+    <string name="task_attachment_label">Tài liệu / Hình ảnh đính kèm</string>
+
+    <string name="btn_save">Lưu công việc</string>
+    <string name="btn_cancel">Hủy</string>
+
+    <string name="btn_add">Thêm</string>
+
+    <string name="btn_attach">Chọn tệp / Ảnh</string>
+
+    <!-- Priorities -->
+    <string name="priority_low">Thấp</string>
+    <string name="priority_normal">Bình thường</string>
+    <string name="priority_high">Cao</string>
+    <string name="priority_urgent">Khẩn cấp</string>
+
+    <!-- Statuses -->
+    <string name="status_pending">Chưa làm</string>
+    <string name="status_in_progress">Đang làm</string>
+    <string name="status_completed">Hoàn thành</string>
+
+    <!-- Repeat Options -->
+    <string name="repeat_none">Không lặp lại</string>
+    <string name="repeat_daily">Hằng ngày</string>
+    <string name="repeat_weekly">Hằng tuần</string>
+    <string name="repeat_monthly">Hằng tháng</string>
+
+    <!-- Reminder Leads -->
+    <string name="reminder_at_time">Đúng giờ hạn chót</string>
+    <string name="reminder_10m">Trước 10 phút</string>
+    <string name="reminder_1h">Trước 1 giờ</string>
+    <string name="reminder_1d">Trước 1 ngày</string>
+
+    <!-- Format & Placeholders -->
+    <string name="date_format_btn">🗓 %1$s</string>
+    <string name="time_format_btn">🕒 %1$s</string>
+    <string name="default_date_placeholder">🗓 22/09/2026</string>
+    <string name="default_time_placeholder">🕒 14:30</string>
+
+
+    <!-- Login / Register / Profile -->
+    <string name="title_login">Đăng Nhập Tài Khoản</string>
+    <string name="title_register">Đăng Ký Tài Khoản Mới</string>
+    <string name="title_profile">Thông Tin Cá Nhân</string>
+    <string name="label_username">Tên tài khoản / Email</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Mật khẩu</string>
+    <string name="label_fullname">Họ và tên</string>
+    <string name="hint_username_or_email">Email hoặc Username</string>
+    <string name="hint_password_placeholder">••••••••</string>
+    <string name="hint_fullname_placeholder">Nguyễn Văn A</string>
+    <string name="hint_email_placeholder">email@example.com</string>
+    <string name="hint_password_min6">Mật khẩu ít nhất 6 ký tự</string>
+    <string name="hint_pin_placeholder">****</string>
+    <string name="desc_app_logo">Logo ứng dụng</string>
+    <string name="btn_login">Đăng Nhập</string>
+    <string name="btn_register">Đăng Ký</string>
+    <string name="btn_logout">Đăng Xuất</string>
+    <string name="link_to_register">Chưa có tài khoản? Đăng ký ngay</string>
+    <string name="link_to_login">Đã có tài khoản? Đăng nhập ngay</string>
+
+    <!-- Settings & Lock -->
+    <string name="title_settings">Cài Đặt Ứng Dụng</string>
+    <string name="setting_dark_mode">Chế độ tối</string>
+    <string name="setting_language">Ngôn ngữ ứng dụng</string>
+    <string name="setting_pin_lock">Khóa ứng dụng bằng mã PIN</string>
+    <string name="setting_export_data">Xuất dữ liệu công việc (CSV)</string>
+    <string name="setting_clear_data">Xóa toàn bộ dữ liệu</string>
+    <string name="title_pin_lock">Nhập Mã PIN Bảo Mật</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_exit_title">Xác nhận thoát</string>
+    <string name="dialog_exit_message">Bạn có chắc chắn muốn thoát ứng dụng Quản lý công việc không?</string>
+    <string name="dialog_delete_title">Xác nhận xóa</string>
+    <string name="dialog_delete_message">Bạn có chắc chắn muốn đưa công việc \"%1$s\" vào thùng rác không?</string>
+    <string name="btn_yes">Đồng ý</string>
+    <string name="btn_no">Hủy bỏ</string>
+    <string name="btn_ok">Đóng</string>
+
+    <!-- Validation & Toasts -->
+    <string name="err_empty_title">Vui lòng nhập tên công việc!</string>
+
+    <string name="err_login_failed">Tên tài khoản hoặc mật khẩu không chính xác!</string>
+    <string name="msg_task_added">Thêm công việc thành công!</string>
+    <string name="msg_task_updated">Cập nhật công việc thành công!</string>
+    <string name="msg_task_deleted">Công việc đã chuyển vào thùng rác!</string>
+
+    <string name="close">Close</string>
+    <string name="tasks_for_selected_date">Công việc ngày chọn:</string>
+    <string name="tasks_for_selected_date_format">Công việc ngày %1$s:</string>
+    <string name="no_tasks_for_date">Không có công việc nào trong ngày này.</string>
+
+    <string name="desc_avatar">Avatar</string>
+    <string name="default_user_name">Người dùng</string>
+    <string name="default_user_email">user@quanlycv.com</string>
+    <string name="kanban_progress_format">Đã hoàn thành %1$d / %2$d công việc</string>
+    <string name="completed_ratio_format">Hoàn thành: %1$d / %2$d công việc</string>
+    <string name="streak_and_pending_format">%1$d Ngày streak liên tục • %2$d việc còn lại</string>
+    <string name="selected_file_format">Tệp đã chọn: %1$s</string>
+    <string name="profile_total_tasks_format">📋 %1$d công việc</string>
+    <string name="kanban_current_status_format">Trạng thái hiện tại: %1$s</string>
+    <string name="percent_format">%1$d%%</string>
+
+    <!-- Stats Screen Strings -->
+    <string name="tab_this_week">Tuần này</string>
+    <string name="tab_this_month">Tháng này</string>
+    <string name="tab_all">Tất cả</string>
+    <string name="title_overview">TỔNG QUAN HIỆU SUẤT</string>
+    <string name="default_overview_completed">Hoàn thành: 0 / 0 công việc</string>
+    <string name="default_overview_streak">0 Ngày streak liên tục • 0 việc còn lại</string>
+    <string name="title_daily_chart">BIỂU ĐỒ HOÀN THÀNH THEO NGÀY</string>
+    <string name="title_priority_distribution">PHÂN BỔ THEO MỨC ĐỘ ƯU TIÊN</string>
+    <string name="priority_urgent_high">Khẩn cấp / Cao</string>
+    <string name="day_mon">T2</string>
+    <string name="day_tue">T3</string>
+    <string name="day_wed">T4</string>
+    <string name="day_thu">T5</string>
+    <string name="day_fri">T6</string>
+    <string name="day_sat">T7</string>
+    <string name="day_sun">CN</string>
+    <string name="default_zero">0</string>
+    <string name="btn_save_info">Lưu thông tin</string>
+    <string name="default_profile_tasks">📋 0 Công việc</string>
+    <string name="default_profile_streak">0 ngày streak</string>
+    <string name="btn_clear_trash">Dọn sạch</string>
+    <string name="empty_trash_msg">Thùng rác trống.</string>
+    <string name="label_total">Tổng số</string>
+    <string name="label_overall_progress">Tiến độ hoàn thành chung</string>
+    <string name="default_zero_percent">0%</string>
+    <string name="default_kanban_progress">Đã hoàn thành 0 / 0 công việc</string>
+    <string name="label_priority_level">Mức Độ Ưu Tiên</string>
+    <string name="kanban_header_pending">Cần Làm (%1$d)</string>
+    <string name="kanban_header_in_progress">Đang Làm (%1$d)</string>
+    <string name="kanban_header_completed">Hoàn Thành (%1$d)</string>
+    <string name="desc_delete_subtask">Xóa công việc con</string>
+
+    <!-- Dialog Task Options Strings -->
+    <string name="label_change_status">CHUYỂN TRẠNG THÁI</string>
+    <string name="desc_move_pending">Chuyển vào cột CẦN LÀM</string>
+    <string name="desc_move_in_progress">Chuyển vào cột ĐANG LÀM</string>
+    <string name="desc_move_completed">Chuyển vào cột HOÀN THÀNH</string>
+    <string name="label_task_actions">THAO TÁC CÔNG VIỆC</string>
+    <string name="btn_edit_task">Sửa công việc</string>
+    <string name="btn_delete_task">Xóa công việc</string>
+    <string name="label_status_pending_title">Cần làm</string>
+    <string name="label_status_in_progress_title">Đang làm</string>
+    <string name="label_status_completed_title">Hoàn thành</string>
+</resources>

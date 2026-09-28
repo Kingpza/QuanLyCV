@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    tools:ignore="HardcodedText,TouchTargetSizeCheck,TextContrastCheck">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTaskMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Left Category Accent Indicator Line -->
+            <View
+                android:id="@+id/vCategoryIndicator"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_pill_blue" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <!-- Top Row: Badge, Category, Priority & Action Icons -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Left Tags & Badge Group -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/llRightActions"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <!-- Badge Circle Initial -->
+                        <TextView
+                            android:id="@+id/tvTaskInitialBadge"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:background="@drawable/bg_pill_blue"
+                            android:gravity="center"
+                            android:text="A"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <!-- Category Tag -->
+                        <TextView
+                            android:id="@+id/tvCategoryBadge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:background="@drawable/bg_action_grey"
+                            android:paddingHorizontal="8dp"
+                            android:paddingVertical="3dp"
+                            android:text="Học tập"
+                            android:textColor="@color/text_primary"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <!-- Priority Tag -->
+                        <TextView
+                            android:id="@+id/tvPriorityBadge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:text="Cao"
+                            android:textColor="@color/cat_magenta"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Right Action Icons: Green Checkmark & Expand Arrow -->
+                    <LinearLayout
+                        android:id="@+id/llRightActions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgExpandArrow"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginEnd="8dp"
+                            android:contentDescription="Mở rộng công việc con"
+                            android:src="@drawable/ic_double_arrow_down"
+                            app:tint="#F8AE46" />
+
+                        <ImageView
+                            android:id="@+id/imgCheckmarkCircle"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="Trạng thái hoàn thành"
+                            android:src="@drawable/ic_check_green_circle" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- Middle Row: Task Title -->
+                <TextView
+                    android:id="@+id/tvTaskTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Nộp báo cáo tiến độ công việc"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <!-- Bottom Row: Date/Time & Footer Counts -->
+                <LinearLayout
+                    android:id="@+id/llTaskFooter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <!-- Deadline / Time -->
+                    <TextView
+                        android:id="@+id/tvTaskDateTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="🕒 25/09/2026 14:00"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp" />
+
+                    <!-- Comment Count -->
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="Bình luận"
+                        android:src="@drawable/ic_message"
+                        app:tint="@color/icon_grey" />
+
+                    <TextView
+                        android:id="@+id/tvCommentCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="3"
+                        android:textColor="@color/icon_grey"
+                        android:textSize="12sp" />
+
+                    <!-- Attachment Count -->
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginStart="12dp"
+                        android:contentDescription="Tệp đính kèm"
+                        android:src="@drawable/ic_attachment"
+                        app:tint="@color/icon_grey" />
+
+                    <TextView
+                        android:id="@+id/tvAttachmentCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="2"
+                        android:textColor="@color/icon_grey"
+                        android:textSize="12sp" />
+
+                    <!-- Star Favorite Button -->
+                    <ImageView
+                        android:id="@+id/imgStarFavorite"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="12dp"
+                        android:contentDescription="Đánh dấu yêu thích"
+                        android:src="@drawable/ic_star" />
+
+                </LinearLayout>
+
+                <!-- Subtasks Expandable Container -->
+                <LinearLayout
+                    android:id="@+id/llSubtasksContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_task_card_secondary"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Công việc con / Các bước nhỏ"
+                        android:textColor="@color/text_primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/llSubtaskList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

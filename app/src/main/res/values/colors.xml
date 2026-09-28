@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Custom App Colors - Modern Multicolored Theme -->
+    <color name="primary">#0E33F3</color> <!-- Blue -->
+    <color name="primary_dark">#0A24AA</color>
+
+    <!-- Category Colors (From Design) -->
+    <color name="cat_blue">#0E33F3</color>
+    <color name="cat_purple">#9E46F8</color>
+    <color name="cat_magenta">#F846B4</color>
+    <color name="cat_yellow">#F8AE46</color>
+
+    <color name="status_completed">#38D39F</color> <!-- Green Check -->
+    <color name="status_pending">#F8AE46</color>
+
+    <!-- Backgrounds -->
+    <color name="bg_main">#F5F6FA</color> <!-- Light grey/blue background -->
+    <color name="card_bg">#FFFFFF</color>
+    <color name="bg_task_secondary">#F8F9FE</color> <!-- Very light tint for secondary tasks -->
+
+    <!-- Text -->
+    <color name="text_primary">#1A1C29</color> <!-- Dark navy/black -->
+    <color name="text_secondary">#5C6479</color> <!-- Muted grey/blue with high contrast -->
+    <color name="text_hint">#717B91</color>
+
+    <!-- Misc -->
+    <color name="divider">#E9ECF4</color>
+    <color name="red_delete">#E53935</color>
+
+    <color name="icon_grey">#717B91</color>
+    <color name="icon_bg_grey">#F4F6F9</color>
+
+    <!-- Dynamic Option & Container Backgrounds -->
+    <color name="status_option_normal_bg">#F8F9FE</color>
+    <color name="status_option_normal_stroke">#E9ECF4</color>
+    <color name="status_option_active_bg">#F0F4FF</color>
+    <color name="delete_option_bg">#FFF5F5</color>
+    <color name="delete_option_stroke">#FFD6D6</color>
+    <color name="drag_handle_color">#D0D5DD</color>
+    <color name="track_bg">#EAECEF</color>
+
+    <!-- Circle Icon Light Backgrounds -->
+    <color name="circle_icon_blue_bg">#E6EAFF</color>
+    <color name="circle_icon_green_bg">#E8F8F5</color>
+    <color name="circle_icon_orange_bg">#FFF5E6</color>
+</resources>

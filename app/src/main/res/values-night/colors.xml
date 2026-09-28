@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Custom App Colors - Modern Dark Theme -->
+    <color name="primary">#5C7CFA</color> <!-- Lighter blue for dark background contrast -->
+    <color name="primary_dark">#3B5BDB</color>
+
+    <!-- Category Colors (Adapted for Dark Mode contrast) -->
+    <color name="cat_blue">#5C7CFA</color>
+    <color name="cat_purple">#B197FC</color>
+    <color name="cat_magenta">#FF6B6B</color>
+    <color name="cat_yellow">#FFD43B</color>
+
+    <color name="status_completed">#38D39F</color>
+    <color name="status_pending">#FFD43B</color>
+
+    <!-- Backgrounds -->
+    <color name="bg_main">#12141D</color> <!-- Deep dark navy background -->
+    <color name="card_bg">#1E2230</color> <!-- Dark surface card background -->
+    <color name="bg_task_secondary">#262B3D</color> <!-- Dark secondary tint -->
+
+    <!-- Text -->
+    <color name="text_primary">#F1F3F9</color> <!-- High contrast light text -->
+    <color name="text_secondary">#94A3B8</color> <!-- Muted slate light text -->
+    <color name="text_hint">#64748B</color>
+
+    <!-- Misc -->
+    <color name="divider">#2A2F42</color>
+    <color name="red_delete">#FF6B6B</color>
+
+    <color name="icon_grey">#94A3B8</color>
+    <color name="icon_bg_grey">#2A2F42</color>
+
+    <!-- Dynamic Option & Container Backgrounds -->
+    <color name="status_option_normal_bg">#262B3D</color>
+    <color name="status_option_normal_stroke">#333A52</color>
+    <color name="status_option_active_bg">#1E2A4A</color>
+    <color name="delete_option_bg">#3D1E24</color>
+    <color name="delete_option_stroke">#5E262F</color>
+    <color name="drag_handle_color">#475569</color>
+    <color name="track_bg">#2A2F42</color>
+
+    <!-- Circle Icon Dark Tinted Backgrounds -->
+    <color name="circle_icon_blue_bg">#1E2A4A</color>
+    <color name="circle_icon_green_bg">#1B382F</color>
+    <color name="circle_icon_orange_bg">#3A2E1E</color>
+</resources>
