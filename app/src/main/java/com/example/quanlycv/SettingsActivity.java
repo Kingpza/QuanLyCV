@@ -119,6 +119,15 @@ public class SettingsActivity extends AppCompatActivity {
         builder.show();
     }
 
+    private String escapeCsv(String input) {
+        if (input == null) return "";
+        String escaped = input.replace("\"", "\"\"");
+        if (escaped.contains(",") || escaped.contains("\n") || escaped.contains("\"")) {
+            return "\"" + escaped + "\"";
+        }
+        return escaped;
+    }
+
     @SuppressWarnings("UnnecessaryCallToStringValueOf")
     private void exportDataToCSV() {
         try {
@@ -137,10 +146,10 @@ public class SettingsActivity extends AppCompatActivity {
 
             for (Task t : tasks) {
                 writer.append(String.valueOf(t.getId())).append(",")
-                        .append(t.getTitle()).append(",")
-                        .append(t.getDesc() != null ? t.getDesc() : "").append(",")
-                        .append(t.getDate()).append(",")
-                        .append(t.getTime()).append(",")
+                        .append(escapeCsv(t.getTitle())).append(",")
+                        .append(escapeCsv(t.getDesc())).append(",")
+                        .append(escapeCsv(t.getDate())).append(",")
+                        .append(escapeCsv(t.getTime())).append(",")
                         .append(String.valueOf(t.getStatus())).append(",")
                         .append(String.valueOf(t.getPriority())).append("\n");
             }

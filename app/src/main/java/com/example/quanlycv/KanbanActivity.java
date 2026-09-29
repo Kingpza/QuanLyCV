@@ -119,6 +119,9 @@ public class KanbanActivity extends AppCompatActivity {
 
         // Update Overall Progress Board
         int overallPercent = total > 0 ? (completed.size() * 100 / total) : 0;
+        int pendingPercent = total > 0 ? (pending.size() * 100 / total) : 0;
+        int inProgressPercent = total > 0 ? (inProgress.size() * 100 / total) : 0;
+        
         ProgressBar pbKanbanOverall = findViewById(R.id.pbKanbanOverall);
         TextView tvKanbanProgressPercent = findViewById(R.id.tvKanbanProgressPercent);
         TextView tvKanbanProgressDetail = findViewById(R.id.tvKanbanProgressDetail);
@@ -126,6 +129,22 @@ public class KanbanActivity extends AppCompatActivity {
         if (pbKanbanOverall != null) pbKanbanOverall.setProgress(overallPercent);
         if (tvKanbanProgressPercent != null) tvKanbanProgressPercent.setText(getString(R.string.percent_format, overallPercent));
         if (tvKanbanProgressDetail != null) tvKanbanProgressDetail.setText(getString(R.string.kanban_progress_format, completed.size(), total));
+
+        // Sub items
+        TextView tvPendingCountPercent = findViewById(R.id.tvPendingCountPercent);
+        ProgressBar pbKanbanPending = findViewById(R.id.pbKanbanPending);
+        if (tvPendingCountPercent != null) tvPendingCountPercent.setText(getString(R.string.count_percent_format, pending.size(), pendingPercent));
+        if (pbKanbanPending != null) pbKanbanPending.setProgress(pendingPercent);
+
+        TextView tvInProgressCountPercent = findViewById(R.id.tvInProgressCountPercent);
+        ProgressBar pbKanbanInProgress = findViewById(R.id.pbKanbanInProgress);
+        if (tvInProgressCountPercent != null) tvInProgressCountPercent.setText(getString(R.string.count_percent_format, inProgress.size(), inProgressPercent));
+        if (pbKanbanInProgress != null) pbKanbanInProgress.setProgress(inProgressPercent);
+
+        TextView tvCompletedCountPercent = findViewById(R.id.tvCompletedCountPercent);
+        ProgressBar pbKanbanCompletedInner = findViewById(R.id.pbKanbanCompletedInner);
+        if (tvCompletedCountPercent != null) tvCompletedCountPercent.setText(getString(R.string.count_percent_format, completed.size(), overallPercent));
+        if (pbKanbanCompletedInner != null) pbKanbanCompletedInner.setProgress(overallPercent);
 
 
 

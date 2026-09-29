@@ -54,7 +54,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         );
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
-                .setSmallIcon(R.mipmap.ic_launcher)
+                .setSmallIcon(R.drawable.ic_clock)
                 .setContentTitle("Nhắc nhở công việc")
                 .setContentText(contentText)
                 .setStyle(new NotificationCompat.BigTextStyle().bigText(contentText + (taskDesc != null && !taskDesc.isEmpty() ? "\nMô tả: " + taskDesc : "")))

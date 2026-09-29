@@ -265,6 +265,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(KEY_TASK_REPEAT, task.getRepeatRule());
         values.put(KEY_TASK_REMINDER_LEAD, task.getReminderLeadTime());
         values.put(KEY_TASK_IS_DELETED, task.getIsDeleted());
+        values.put("is_favorite", task.isFavorite() ? 1 : 0);
         return values;
     }
 

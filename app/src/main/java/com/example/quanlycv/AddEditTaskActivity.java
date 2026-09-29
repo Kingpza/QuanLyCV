@@ -132,7 +132,7 @@ public class AddEditTaskActivity extends AppCompatActivity {
                 if (existingTask.getCategoryName() != null && !existingTask.getCategoryName().isEmpty()) {
                     etTaskCategory.setText(existingTask.getCategoryName());
                 } else {
-                    etTaskCategory.setText(getString(R.string.default_user_name));
+                    etTaskCategory.setText("Cá nhân");
                 }
 
                 // Set Priority Spinner (1: Low, 2: Normal, 3: High, 4: Urgent)

@@ -17,7 +17,7 @@
     <!-- Menu -->
     <string name="menu_stats">Thống Kê &amp; Báo Cáo</string>
     <string name="menu_calendar">Lịch Công Việc</string>
-    <string name="menu_kanban">Bảng Tiến Độ</string>
+    <string name="menu_kanban">Tiến độ công việc</string>
     <string name="menu_trash">Thùng Rác</string>
     <string name="menu_group_account_settings">Tài khoản &amp; Cài đặt</string>
     <string name="menu_profile">Thông Tin Cá Nhân</string>
@@ -67,6 +67,10 @@
     <string name="status_pending">Chưa làm</string>
     <string name="status_in_progress">Đang làm</string>
     <string name="status_completed">Hoàn thành</string>
+
+    <string name="kanban_pending_label">Cần làm</string>
+    <string name="kanban_in_progress_label">Đang làm</string>
+    <string name="kanban_completed_label">Hoàn thành</string>
 
     <!-- Repeat Options -->
     <string name="repeat_none">Không lặp lại</string>
@@ -149,6 +153,7 @@
     <string name="profile_total_tasks_format">📋 %1$d công việc</string>
     <string name="kanban_current_status_format">Trạng thái hiện tại: %1$s</string>
     <string name="percent_format">%1$d%%</string>
+    <string name="count_percent_format">%1$d (%2$d%%)</string>
 
     <!-- Stats Screen Strings -->
     <string name="tab_this_week">Tuần này</string>
